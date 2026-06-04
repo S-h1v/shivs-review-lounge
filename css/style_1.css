@@ -41,11 +41,12 @@ header {
     font-size: 18px;
 }
 
-header h1 {
+header h1 a {
     color: var(--accent-ochre);
     padding: 10px;
     margin: 0;
     font-family: "Book Antiqua", serif;
+    text-decoration: none;
 }   
 
 header ul {
