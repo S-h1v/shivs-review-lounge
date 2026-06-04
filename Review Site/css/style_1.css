@@ -1,0 +1,248 @@
+:root {
+    --bg-color: #cac2b0;
+    --text-color: #2c1a0a;
+    --accent-ochre: #f0c050;
+    --accent-green: #2c4a1e;
+    --text-secondary: #6b4226;
+    --card-bg: #e0d4b8;
+    --heading-bg: #2c4a1e;
+    --nav-bg: #3d2b0e;
+    --accent-rust: #8b3a1a ;
+    --accent-sand: #c4a882;
+    --accent-moss: #4a6741;
+    --accent-gold: #d4a843;
+    --accent-dark-brown: #1a0d05;
+    --accent-warm-white: #faf4e8;
+    --socials-footer-color: #e5e5bc;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    background-color: var(--heading-bg);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    font-size: 18px;
+}
+
+header h1 {
+    color: var(--accent-ochre);
+    padding: 10px;
+    margin: 0;
+    font-family: "Book Antiqua", serif;
+}   
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    padding: 15px;
+    margin: 0;
+}
+
+header ul img {
+    filter: invert(1) sepia(1) saturate(3) brightness(0.9);
+}
+
+nav{
+    background-color: var(--nav-bg) ;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;   
+    justify-content: center;
+}
+
+nav ul li a {
+  display: block;
+  color: var(--bg-color);
+  text-align: center;
+  padding: 12px 10px;
+  text-decoration: none;
+  
+}
+
+nav ul li a:hover {
+    background-color: var(--text-secondary);
+    color: var(--accent-sand);
+}
+
+.review-card {
+    background-color: var(--card-bg);
+    max-width: 1000px;
+    padding: 10px;
+    margin : auto ;
+    margin-bottom: 40px;
+    box-shadow: -4px 4px 7px #6e5f49;
+}
+
+.review-header {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    align-items: center;
+    padding: 5px;
+}
+
+.score {
+    font-family:  "Merriweather";
+    font-size: 20px;
+}
+
+.review-header h2 {
+    margin: 0;
+    display: inline;
+    font-family: "merriweather", sans-serif;
+}
+
+.review-info p {
+    padding: 0 50px 5px 50px;
+}
+
+main > h2 {
+
+    text-align: center;
+    font-family: "oswald", sans-serif;
+}
+
+.review-card img {
+    width: 100%;
+}
+
+section h2 {
+    text-decoration: none;
+}
+
+section h2 a {
+    color: var(--text-color);
+    text-decoration: none; 
+}
+
+section h2 a:hover {
+    color: var(--text-secondary);
+}
+
+section p {
+    text-align: center;
+    font-family:"EB Garamond";
+    font-size: 18px;
+}
+
+footer {
+    background-color: var(--heading-bg);
+    color: var(--socials-footer-color);
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.review-page {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+.review-hero-overlay h1 {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.review-page h2 {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+}
+
+.review-hero {
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 30px;
+    
+}
+
+.review-hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 80px 40px;
+    text-align: center;
+    color: var(--accent-ochre);
+}
+
+.review-page p {
+    text-align: justify;
+}
+
+
+p.overall-score {
+    text-align: center ;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    margin: 0;
+}
+
+table, th, td {
+    border: 1px solid;
+    vertical-align: middle;
+}
+
+
+
+td:first-child a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+    font-family: "Merriweather", sans-serif;
+    font-size: 16px;
+}
+
+th {
+    background-color: var(--accent-sand);
+    text-align: center;
+    padding: 5px;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  border-color: var(--nav-bg);
+}
+
+tr:hover {
+    background-color: var(--card-bg);
+}
+
+.index-page h1 {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
