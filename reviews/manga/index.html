@@ -68,4 +68,18 @@
         </div>
     </footer>
 
+
+
+    <script>
+  document.querySelectorAll("table tbody tr").forEach(function (row) {
+    var link = row.querySelector("td a");
+    if (!link) return;
+
+    row.style.cursor = "pointer";
+
+    row.addEventListener("click", function () {
+      window.location.href = link.href;
+    });
+  });
+</script>
 </body>

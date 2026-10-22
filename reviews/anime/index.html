@@ -14,7 +14,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../../images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../../images/favicon-16x16.png">
     <link rel="manifest" href="images/site.webmanifest">
-</head>
+</head>     
 
 <body>
      <header>
@@ -76,4 +76,18 @@
         </div>
     </footer>
 
+
+
+    <script>
+    document.querySelectorAll("table tbody tr").forEach(function (row) {
+    var link = row.querySelector("td a");
+    if (!link) return;
+
+    row.style.cursor = "pointer";
+
+    row.addEventListener("click", function () {
+      window.location.href = link.href;
+    });
+    });
+    </script>
 </body>
