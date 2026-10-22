@@ -277,3 +277,10 @@ tr:hover {
     text-align: center;
     font-family: "Oswald", sans-serif;
 }
+
+
+@media (max-width: 600px) and (orientation: portrait) {
+  .hide-mobile {
+    display: none;
+  }
+}
