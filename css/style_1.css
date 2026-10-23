@@ -21,7 +21,7 @@
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Inter", serif;
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -47,8 +47,9 @@ header h1 a {
     color: var(--accent-ochre);
     padding: 10px;
     margin: 0;
-    font-family: "Book Antiqua", serif;
+    font-family: "Oswald", serif;
     text-decoration: none;
+     letter-spacing: 6px;
 }   
 
 header ul {
@@ -75,6 +76,7 @@ nav ul {
     margin: 0;
     padding: 0;   
     justify-content: center;
+    font-family: "Oswald", serif;
 }
 
 nav ul li a {
@@ -306,4 +308,27 @@ tr:hover {
   .hide-mobile {
     display: none;
   }
+}
+
+.review-hero {
+    position: relative;
+}
+
+.back-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 2;
+    display: inline-block;
+    color: var(--accent-ochre);
+    text-decoration: none;
+    font-family: "Oswald", sans-serif;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.back-button:hover {
+    color: var(--accent-ochre);
+    text-shadow: 0 0 8px var(--accent-ochre);
 }
